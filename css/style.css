@@ -1,0 +1,64 @@
+*
+{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+
+}
+body
+{
+    background: url("../img/background.png");
+    color: black;
+    font-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2
+{
+    font-size: 60px;
+    text-shadow: 2px 2px 3px black;
+    color: white;
+
+}
+p
+{
+    padding-top: 20px;
+    text-align: start;
+    font-size: 20px;
+
+
+
+}
+.cont0
+{
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: -80px;    
+    
+}
+.cont1
+{
+    position: relative;
+    background-color:   white;
+    width: 300px;
+    height: 350px;
+    top: 100px;
+    box-shadow: 4px 4px 5px black;
+    padding-top: 20px;
+    text-align: start;
+    font-size: 20px;
+        
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.botao
+{
+    margin-top: 20px;
+}
