@@ -7,7 +7,7 @@
 }
 body
 {
-    background: url("../img/background.png");
+    background: url("../img/background2.png");
     color: black;
     font-size: 30px;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@ p
 .cont1
 {
     position: relative;
-    background-color:   white;
+    background-color:  rgba(225, 225, 225, 0.5);
     width: 300px;
     height: 350px;
     top: 100px;
