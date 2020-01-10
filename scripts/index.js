@@ -1,14 +1,11 @@
 
-captureEvents()
-
-
 function CapturaSexo ()
 {
     var sexo =  document.getElementById('sexo').value
 
     if(sexo== "Masculino")
     {
-       return sexo 
+       return sexo
     }
     else if (sexo == "Feminino")
     {
