@@ -1,44 +1,44 @@
-var peso = ParseFloat(document.querySelector('input#peso').value);
-var altura = ParseFloat(document.querySelector('input#altura').value);
+
 
 var calc = document.getElementById('calcular');
-calc.addEventListener("click", calcular);
+calc.addEventListener("click", () => {
 
+    var peso = parseFloat(document.getElementById("peso").value)
+    var altura = parseFloat(document.getElementById("altura").value)
 
-altura = altura.replace(",", ".");
-peso = altura.replace(",", ".");
+    var imc = peso / (altura * altura )
 
-function calcular()
-{
+    if (imc < 17 )
+    {
+        document.getElementById('res').innerHTML = `Seu IMC é de: ${imc.toFixed(2)} <br><br>Você esta muito abaixo do peso`
+    } else if ( imc >= 17 && imc <= 18.49)
+    {
+        document.getElementById('res').innerHTML = `Seu IMC é de: ${imc.toFixed(2)} <br><br>Você está com o peso abaixo do normal`
+    } else if (imc >= 18 && imc <= 24.99)
+    {
+        document.getElementById('res').innerHTML = `Seu IMC é de: ${imc.toFixed(2)} <br><br>Você está com o peso normal`
+    }
+    else if (imc >= 25 && imc <= 29.99)
+    {
+        document.getElementById('res').innerHTML = `Seu IMC é de: ${imc.toFixed(2)} <br><br>Você está acima do peso`
+    }
+    else if (imc >= 30 && imc <= 34.99)
+    {
+        document.getElementById('res').innerHTML = `Seu IMC é de: ${imc.toFixed(2)} <br><br>Você está com obesidade nivel I `
+    }
+    else if (imc >= 35 && imc <= 39.99)
+    {
+        document.getElementById('res').innerHTML = `Seu IMC é de: ${imc.toFixed(2)} <br><br>Você está com obesidade nivel II (Severa)`
+    }
+    else 
+    {
+        document.getElementById('res').innerHTML = `Seu IMC é de: ${imc.toFixed(2)} <br><br>Você está com obesidade nivel III (Mórbida)`
+    }
+
     
-    var  imc = peso / (altura * altura);
+});
 
-    
 
-    document.getElementById('teste2').innerHTML = imc
-    document.getElementById('teste').innerHTML = imc
 
-    if(imc < 18.5 )
-        {
-            document.getElementById('res').innerHTML = "Você está muito abaixo do peso!"
-        }
-        else if (imc >= 18.5 && imc < 24.9)
-        {
-            document.getElementById('res').innerHTML = "Você está com o peso normal. Continue assim!"
-        }
-            else if (imc >= 24.9 && imc  < 30)
-            {
-                document.getElementById('res').innerHTML = "Você está com sobrepeso. Procure um nutricionista!"
-            }
-                else if (imc > 30)
-                {
-                    document.getElementById ('res').innerHTML = "Você está com obesidade. Procure um nutricionista mais rapido possível!"
-                }
-                else 
-                {
-                    document.getElementById ('res').innerHTML = "  "
 
-                }
-
-}
 
