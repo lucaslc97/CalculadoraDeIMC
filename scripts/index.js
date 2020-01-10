@@ -1,29 +1,32 @@
-peso = document.getElementById('peso').value;
-altura = document.getElementById('altura').value;
-calc = document.getElementById('calcular');
-pesoN = Number(peso);
-alturaN = Number(altura);
+var peso = ParseFloat(document.querySelector('input#peso').value);
+var altura = ParseFloat(document.querySelector('input#altura').value);
 
-calc.addEventListener("click", calcular)
+var calc = document.getElementById('calcular');
+calc.addEventListener("click", calcular);
 
+
+altura = altura.replace(",", ".");
+peso = altura.replace(",", ".");
 
 function calcular()
 {
-    var  conta =  alturaN * alturaN;
-    var imc = pesoN /conta;
     
-    document.getElementById('teste2').innerHTML = conta
+    var  imc = peso / (altura * altura);
+
+    
+
+    document.getElementById('teste2').innerHTML = imc
     document.getElementById('teste').innerHTML = imc
 
     if(imc < 18.5 )
         {
             document.getElementById('res').innerHTML = "Você está muito abaixo do peso!"
         }
-        else if ((imc >= 18.5) && (imc < 24.9))
+        else if (imc >= 18.5 && imc < 24.9)
         {
             document.getElementById('res').innerHTML = "Você está com o peso normal. Continue assim!"
         }
-            else if ((imc >= 24.9) && (imc  < 30))
+            else if (imc >= 24.9 && imc  < 30)
             {
                 document.getElementById('res').innerHTML = "Você está com sobrepeso. Procure um nutricionista!"
             }
@@ -33,7 +36,7 @@ function calcular()
                 }
                 else 
                 {
-                    document.getElementById ('res').innerHTML = " "
+                    document.getElementById ('res').innerHTML = "  "
 
                 }
 
