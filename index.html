@@ -17,9 +17,17 @@
     <div class="cont container-fluid">
     <div class="cont0 container"><h2><strong>Calculadora de IMC</strong></h2></div>
         <div class="cont1 container">
-            Digite seu peso <input  name="peso" id="peso"> <br>
-            Digite sua altura <input  name="altura" id="altura"> 
-            <button type="button" id="calcular" class="botao">Calcular</button>
+          <div class="inpute input-group">
+            <select class="custom-select secondary" id="sexo" aria-label="Exemplo de select com botão addon">
+              <option selected>Sexo</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Feminino">Feminino</option>
+            </select>
+            
+          </div>
+            Digite seu peso <input class="form-control" name="peso" id="peso"> <br>
+            Digite sua altura <input class="form-control" name="altura" id="altura"> 
+            <button type="button" id="calcular" class="botao btn btn-outline-light">Calcular</button>
 
             <p id="res"></p>
             <p id="teste"></p>

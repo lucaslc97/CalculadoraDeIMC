@@ -3,7 +3,11 @@
     margin: 0 auto;
     padding: 0;
     font-family: 'Oswald', sans-serif;
-
+}
+.inpute
+{
+    color:black !important; ;
+    margin-bottom: 10px;
 }
 body
 {
@@ -44,8 +48,8 @@ p
 {
     position: relative;
     background-color:  rgba(225, 225, 225, 0.5);
-    width: 300px;
-    height: 350px;
+    width: 500px;
+    height: 500px;
     top: 100px;
     box-shadow: 4px 4px 5px black;
     padding-top: 20px;
@@ -60,5 +64,10 @@ input[type=number] {
 
 .botao
 {
+    border: 1px solid black;
+    margin-left: 125px;
+    color: black;
     margin-top: 20px;
+    height: 50px;
+    width: 200px;
 }
