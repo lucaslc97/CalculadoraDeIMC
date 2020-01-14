@@ -32,7 +32,7 @@ h2
 }
 p
 {
-    padding-top: 20px;
+    padding-top: 3px;
     text-align: start;
     font-size: 20px;
 
@@ -45,7 +45,8 @@ p
     text-align: center;
     padding-top: 50px;
     position: relative;
-    margin-bottom: -80px;        
+    margin-bottom: -80px;    
+
 }
 
 .cont1
@@ -53,7 +54,7 @@ p
     position: relative;
     background-color:  rgba(225, 225, 225, 0.5);
     width: 350px;
-    height: 500px;
+    height: 650px;
     top: 100px;
     box-shadow: 4px 4px 5px black;
     padding-top: 20px;
@@ -90,6 +91,7 @@ input[type=number] {
     width: 200px;
     margin-left: 50px;
 }
+
 
 @media (min-width: 500px)
  {
@@ -129,3 +131,4 @@ input[type=number] {
 
 
 }
+
